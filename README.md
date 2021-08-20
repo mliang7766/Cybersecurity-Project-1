@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![alt text](https://github.com/mliang7766/Cybersecurity-Project-1/blob/main/Diagrams/michael-liang-network-diagram.JPG)
+![Network Diagram](https://github.com/mliang7766/Cybersecurity-Project-1/blob/main/Diagrams/michael-liang-network-diagram.JPG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Diagrams/michael-liang-elk-docker-ps.png)
+![sudo docker ps](https://github.com/mliang7766/Cybersecurity-Project-1/blob/main/Images/michael-liang-elk-docker-ps.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
