@@ -100,6 +100,6 @@ SSH into the control node and follow the steps below:
 - Navigate to http://20.83.202.36:5601/app/kibana to confirm that the ELK server is running.
 
 To run the playbooks, within your Ansible control node, run:
-ansible-playbook install-elk.yml
-ansible-playbook filebeat-playbook.yml
-ansible-playbook metricbeat-playbook.yml
+- ansible-playbook install-elk.yml
+- ansible-playbook filebeat-playbook.yml
+- ansible-playbook metricbeat-playbook.yml
