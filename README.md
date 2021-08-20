@@ -2,7 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Diagrams/michael-liang-network-diagram.jpg)
+![GitHub Logo](/Diagrams/michael-liang-network-diagram.jpg)
+Format: ![Alt Text](url)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -95,10 +96,11 @@ SSH into the control node and follow the steps below:
 - SSH into the ELK-VM and run "sudo docker ps" to ensure the elk container was properly installed and is running
 - After ensuring the elk container is up and running, navigate to http://20.83.202.36:5601/app/kibana on your local PC to access Kibana
 
-- The filebeat playbook is named filebeat-playbook.yml and should be copied to /etc/ansible/roles and the metricbeat playbook is named metricbeat-playbook.yml, also to be copied to /etc/ansible/roles
+- The playbook is install-elk.yml and needs to be in /etc/ansible
 - /etc/ansible/hosts within the Ansible control node needs to be updated with the correct IPs of the VMs as stated above. Within the playbook files, you specify the machines you want the playbook to run on after "hosts:". For Web-1 and Web-2, it would be "hosts: webservers" and for the ELK-VM, it would be "hosts: elk"
 - Navigate to http://20.83.202.36:5601/app/kibana to confirm that the ELK server is running.
 
 To run the playbooks, within your Ansible control node, run:
+ansible-playbook install-elk.yml
 ansible-playbook filebeat-playbook.yml
 ansible-playbook metricbeat-playbook.yml
