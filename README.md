@@ -48,16 +48,16 @@ Only the jump box machine can accept connections from the Internet. Access to th
 98.116.179.131
 
 Machines within the network can only be accessed by SSH.
-We allowed the jump box (IP 13.90.43.191) to access the ELK VM by way of SSH and we allowed the host PC to access the ELK VM by way of port 5601 (IP 98.116.179.131).
+We allowed the jump box (IP 13.90.43.191) to access the ELK VM by way of SSH and we allowed the host PC to access the ELK VM by way of port 5601 (Public Home IP).
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses     |
 |----------|---------------------|--------------------------|
-| Jump Box | Yes                 | 98.116.179.131           |
-| ELK-VM   | No                  | 10.0.0.4, 98.116.179.131 |
-| Web-1    | No                  | 10.0.0.4, 98.116.179.131 |
-| Web-2    | No                  | 10.0.0.4, 98.116.179.131 |
+| Jump Box | Yes                 | Public Home IP           |
+| ELK-VM   | No                  | 10.0.0.4, Public Home IP |
+| Web-1    | No                  | 10.0.0.4, Public Home IP |
+| Web-2    | No                  | 10.0.0.4, Public Home IP |
 
 ### Elk Configuration
 
