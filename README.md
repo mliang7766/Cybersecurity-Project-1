@@ -31,7 +31,6 @@ Filebeat watches for log data and collects log events.
 Metricbeat collects metric data from the OS and other services that are being used on the server. 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function  | IP Address   | Operating System |
 |----------|-----------|--------------|------------------|
